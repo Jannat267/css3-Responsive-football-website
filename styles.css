@@ -1,3 +1,5 @@
+/* common designs */
+
 body {
     font-family: 'poppins', sans-serif;
     background-color: #FFFFFF;
@@ -5,11 +7,17 @@ body {
     margin: 0;
 }
 
+
+/* align center all items */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+/* top sections style */
 
 .top-banner-details h1 {
     margin: 0;
@@ -19,11 +27,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.player h3,
-.player p {
-    line-height: 1.5em;
 }
 
 .blue {
@@ -82,9 +85,18 @@ main {
     transition: transform 1s ease-out;
 }
 
+
+/*-------- Players sections styles
+----------------------------------- */
+
 .players-section {
     position: relative;
     top: 70px;
+}
+
+.player h3,
+.player p {
+    line-height: 1.5em;
 }
 
 .players {
@@ -118,6 +130,9 @@ p {
 .logo img {
     height: 63px;
 }
+
+
+/*'''''''''''''''Bottom sections styles''''''''''''' */
 
 .bottom-section {
     width: 85%;
@@ -153,6 +168,9 @@ p {
     top: 464px; */
 }
 
+
+/* Footer styles */
+
 footer {
     display: flex;
     flex-direction: column;
@@ -160,6 +178,11 @@ footer {
     position: relative;
     top: 12em;
 }
+
+
+/*///////////////////////////
+ media query for mobile devices
+ ///////////////////////////////*/
 
 @media only screen and (max-width:688px) {
     .container {
@@ -207,13 +230,16 @@ footer {
     }
 }
 
+
+/* Media query for Tablet devices */
+
 @media only screen and (max-width: 992px) and (min-width: 690px) {
     .container {
         width: 100%;
     }
     /* top banner  */
     .top-banner-title {
-        line-height: 50px;
+        line-height: 70px;
         margin-bottom: 40px;
     }
     .top-banner {
@@ -222,7 +248,6 @@ footer {
     }
     .top-banner-item {
         display: flex;
-        flex-direction: column;
         grid-row-gap: 50px;
         justify-content: center;
     }
@@ -239,8 +264,8 @@ footer {
         left: 19px;
     }
     .top-banner-img img {
-        width: 329px;
-        height: 259px;
+        width: 360px;
+        height: 269px;
     }
     .players {
         grid-template-columns: repeat(2, 1fr);
@@ -252,3 +277,6 @@ footer {
         align-items: center;
     }
 }
+
+
+/* ............The End.......... */
