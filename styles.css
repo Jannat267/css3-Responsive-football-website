@@ -34,6 +34,10 @@ main {
     padding: 10PX;
 }
 
+.black {
+    color: black;
+}
+
 .top-banner {
     background-color: #2D25A0;
     height: 677px;
@@ -122,9 +126,13 @@ p {
 }
 
 .icons i {
-    height: 32px;
     color: gray;
     padding: 5px;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 32px;
 }
 
 .logo img {
